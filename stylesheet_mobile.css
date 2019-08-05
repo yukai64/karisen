@@ -1,0 +1,593 @@
+@charset "UTF-8";
+
+/* すべての要素のmarginとpaddingを0に設定します */
+
+* {
+    margin: 0;
+    /* 要素の外側の余白を0にする */
+    padding: 0;
+    /* 要素の内側の余白を0にする */
+}
+
+html,
+body {
+    min-height: 100%;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* background 企画1課 */
+
+.bg_fixed1 {
+    height: 600px;
+    background-image: url('img/1_kyarako.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.bg_fixed2 {
+    height: 600px;
+    background-image: url('img/1_bb.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.bg_fixed3 {
+    height: 600px;
+    background-image: url('img/1_ball.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.bg_fixed4 {
+    height: 600px;
+    background-image: url('img/1_game.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.bg_fixed5 {
+    height: 600px;
+    background-image: url('img/1_ornament.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+
+/* 企画2課　*/
+
+.bg_fixed2_1 {
+    height: 600px;
+    background-image: url('img/2_zenya.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.bg_fixed2_2 {
+    height: 600px;
+    background-image: url('img/2_minikon.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+
+/* 渉外　*/
+
+.bg_fixed3_1 {
+    height: 600px;
+    background-image: url('img/3_gs.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.bg_fixed3_2 {
+    height: 600px;
+    background-image: url('img/3_zyou.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.bg_fixed3_3 {
+    height: 600px;
+    background-image: url('img/3_kyousan.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+
+/* 庶務 */
+
+.bg_fixed4_1 {
+    height: 600px;
+    background-image: url('img/4_buppin.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.bg_fixed4_2 {
+    height: 600px;
+    background-image: url('img/4_eisei.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.bg_fixed4_3 {
+    height: 600px;
+    background-image: url('img/4_eneru.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.scroll {
+    background-color: #0b905d;
+    z-index: 2;
+}
+
+
+/* 全てのsection */
+
+section {
+    padding: 50px 50px 50px 50px;
+    min-width: 70%;
+    /* 幅の最小値を指定する */
+}
+
+.bodyh{
+    height: 1500px;
+    background-color: #f7f7f7;
+}
+
+/* h2のclass title */
+
+.title {
+    font-size: 30px;
+    /* フォントの大きさを指定する */
+    margin-bottom: 30px;
+    font-family: "游ゴシック体", YuGothic, sans-serif;
+    text-align: center;
+    /* 文字・画像を中央にそろえる */
+}
+
+.marker10 {
+    background: linear-gradient(transparent 50%, #fffc7c 50%);
+    font-weight: bold;
+}
+
+
+/* headerはここ */
+
+header {
+    text-align: center;
+    background-size: cover;
+    padding: 60px 0px 0px 0px;
+}
+
+header h2 {
+    color: #0b905d;
+    /* フォントの色を指定する */
+}
+
+.pc {
+    display: none !important;
+    margin: 0 auto;
+}
+
+.sp {
+    display: block !important;
+    margin: 0 auto;
+}
+
+.sptop img {
+    width: 100%;
+}
+
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+
+@media only screen and (max-width: 750px) {
+    .pc {
+        display: none !important;
+    }
+    .sp {
+        display: block !important;
+    }
+}
+
+
+/* スマホメニュー */
+
+#nav-drawer {
+    position: relative;
+}
+
+
+/*チェックボックス等は非表示に*/
+
+.nav-unshown {
+    display: none;
+}
+
+
+/*アイコンのスペース*/
+
+#nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    padding: 30px;
+    vertical-align: middle;
+}
+
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+
+#nav-open span,
+#nav-open span:before,
+#nav-open span:after {
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    border-radius: 50px;
+    background: #000000;
+    display: block;
+    content: '';
+    cursor: pointer;
+}
+
+#nav-open span:before {
+    bottom: -8px;
+}
+
+#nav-open span:after {
+    bottom: -16px;
+}
+
+
+/*閉じる用の薄黒カバー*/
+
+#nav-close {
+    display: none;
+    /*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    /*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+
+/*中身*/
+
+#nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /*最前面に*/
+    width: 50%;
+    /*右側に隙間を作る（閉じるカバーを表示）*/
+    max-width: 330px;
+    /*最大幅（調整してください）*/
+    height: 100%;
+    background: #fff;
+    /*背景色*/
+    transition: .3s ease-in-out;
+    /*滑らかに表示*/
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+    /*左に隠しておく*/
+}
+
+
+/*チェックが入ったらもろもろ表示*/
+
+#nav-input:checked~#nav-close {
+    display: block;
+    /*カバーを表示*/
+    opacity: .5;
+}
+
+#nav-input:checked~#nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    /*中身を表示（右へスライド）*/
+    box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+}
+
+
+/* navi */
+
+.cp_navi {
+    color: #000000;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.cp_navi ul {
+    margin: 0;
+    padding: 0;
+}
+
+.cp_navi ul li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    width: 140px;
+    text-align: center;
+}
+
+.cp_navi>ul>li>a>.caret {
+    border-top: 4px solid #000000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: '';
+    display: inline-block;
+    height: 0;
+    margin: 5px;
+    width: 0;
+    vertical-align: middle;
+    -webkit-transition: color 0.1s linear;
+    transition: color 0.1s linear;
+}
+
+.cp_navi>ul>li>a {
+    font-size: 14px;
+    font-family: '游ゴシック', YuGothic, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.cp_navi>ul>li:hover {
+    background-color: #0b905d;
+}
+
+.cp_navi>ul>li:hover>a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.cp_navi>ul>li:hover>a>.caret {
+    border-top-color: #ffffff;
+}
+
+.cp_navi>ul>li>div {
+    background-color: #0b905d;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: none;
+    margin: 0;
+    opacity: 0;
+    position: fixed;
+    width: 140px;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.cp_navi>ul>li:hover>div {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cp_navi>ul>li>div ul>li {
+    display: block;
+}
+
+.cp_navi>ul>li>div ul>li>a {
+    font-size: 14px;
+    font-family: '游ゴシック', YuGothic, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.cp_navi>ul>li>div ul>li:hover>a {
+    background-color: rgba( 255, 255, 255, 0.1);
+}
+
+p {
+    font-family: '游ゴシック', YuGothic, sans-serif;
+}
+
+.toptop {
+    background-image: url(img/dmeo.jpg);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.top {
+    height: 30px;
+    text-align: center;
+    background-color: #0b905d;
+}
+
+.top h2 {
+    color: #ffffff;
+}
+
+
+/* sectionのclass about */
+
+.about {
+    background-color: #f7f7f7;
+    /* 背景色を指定する */
+    text-align: center;
+}
+
+.about h2 {
+    color: #000000;
+}
+
+.about img {
+    width: 70%;
+    text-align: center;
+}
+
+.about p {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+
+/* sectionのclass photo */
+
+.photo {
+    background-color: #0b905d;
+    color: #ffffff;
+    text-align: center;
+}
+
+.photo h2 {
+    color: #ffcc11;
+}
+
+.photo div {
+    display: inline-block;
+    /* 要素の表示形式を指定する */
+    margin: 5px;
+    border: 10px solid #ffffff;
+    /* 枠線を指定する */
+    background: #ffffff;
+}
+
+
+/* sectionのclass information */
+
+.information {
+    background-color: #f7f7f7;
+    background-size: cover;
+}
+
+.information h2 {
+    color: #000000;
+}
+
+.information p {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 700px;
+    /* 幅の最大値を指定する */
+    margin: 20px auto;
+    box-shadow: 7px 7px 0px 0px rgba(11, 144, 93, 0.5);
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.information div {
+    box-shadow: 7px 7px 0px 0px rgba(11, 144, 93, 0.6);
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: url(img/stripe.png);
+    text-align: center;
+}
+
+.information h3 {
+    color: #0b905d;
+    font-size: 28px;
+    text-align: center;
+}
+
+.information img {
+    float: left;
+    /* 要素の回り込みを指定する */
+    margin-right: 20px;
+}
+
+
+/* googlemap */
+
+.gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* footerはここ */
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    background: #0b905d;
+    padding: 10px 0;
+}
