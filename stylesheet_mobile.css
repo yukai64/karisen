@@ -20,6 +20,75 @@ body {
 }
 
 
+/* メニュー　*/
+
+.cp_menu {
+    width: 100%;
+    margin: 50px auto;
+    padding: 0;
+}
+
+.cp_menu a {
+    font-size: 14px;
+    font-family: '游ゴシック', YuGothic, sans-serif;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 1;
+}
+
+.cp_menu label {
+    display: block;
+    position: relative;
+    margin: 0 0 0px 0;
+    padding: 10px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: '游ゴシック', YuGothic, sans-serif;
+    font-weight: bold;
+}
+
+.cp_menu input {
+    display: none;
+}
+
+.cp_menu ul {
+    margin: 0;
+    padding: 0;
+    background: #0b905d;
+    list-style: none;
+}
+.cp_menu ul li a {
+    color: #ffffff;
+    list-style: none;
+}
+
+
+.cp_menu li {
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+}
+
+
+/*リストが増えたらULごとに追加してください*/
+
+#cp_menu_bar1:checked~#link1 li,
+#cp_menu_bar2:checked~#link2 li,
+#cp_menu_bar3:checked~#link3 li,
+#cp_menu_bar4:checked~#link4 li,
+#cp_menu_bar5:checked~#link5 li,
+#cp_menu_bar6:checked~#link6 li,
+#cp_menu_bar7:checked~#link7 li,
+#cp_menu_bar8:checked~#link8 li {
+    max-height: 500px;
+    opacity: 1;
+}
+
+
 /* background 企画1課 */
 
 .bg_fixed1 {
@@ -175,10 +244,11 @@ section {
     /* 幅の最小値を指定する */
 }
 
-.bodyh{
+.bodyh {
     height: 1500px;
     background-color: #f7f7f7;
 }
+
 
 /* h2のclass title */
 
