@@ -19,7 +19,8 @@ body {
     background-color: #f7f7f7;
 }
 
-header{
+header {
+    text-align: center;
     background-color: #ffffff;
 }
 
@@ -33,6 +34,7 @@ header{
 }
 
 .cp_menu a {
+    text-align: center;
     font-size: 14px;
     font-family: '游ゴシック', YuGothic, sans-serif;
     font-weight: bold;
@@ -44,6 +46,7 @@ header{
 }
 
 .cp_menu label {
+    text-align: center;
     display: block;
     position: relative;
     margin: 0 0 0px 0;
@@ -65,11 +68,11 @@ header{
     background: #0b905d;
     list-style: none;
 }
+
 .cp_menu ul li a {
     color: #ffffff;
     list-style: none;
 }
-
 
 .cp_menu li {
     overflow-y: hidden;
@@ -95,144 +98,40 @@ header{
 
 /* background 企画1課 */
 
-.bg_fixed1 {
-    height: 200px;
-    background-image: url('img/1_kyarako.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed1 {}
 
-.bg_fixed2 {
-    height: 200px;
-    background-image: url('img/1_bb.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed2 {}
 
-.bg_fixed3 {
-    height: 200px;
-    background-image: url('img/1_ball.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed3 {}
 
-.bg_fixed4 {
-    height: 200px;
-    background-image: url('img/1_game.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed4 {}
 
-.bg_fixed5 {
-    height: 200px;
-    background-image: url('img/1_ornament.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed5 {}
 
 
 /* 企画2課　*/
 
-.bg_fixed2_1 {
-    height: 200px;
-    background-image: url('img/2_zenya.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed2_1 {}
 
-.bg_fixed2_2 {
-    height: 200px;
-    background-image: url('img/2_minikon.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed2_2 {}
 
 
 /* 渉外　*/
 
-.bg_fixed3_1 {
-    height: 200px;
-    background-image: url('img/3_gs.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed3_1 {}
 
-.bg_fixed3_2 {
-    height: 200px;
-    background-image: url('img/3_zyou.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed3_2 {}
 
-.bg_fixed3_3 {
-    height: 200px;
-    background-image: url('img/3_kyousan.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed3_3 {}
 
 
 /* 庶務 */
 
-.bg_fixed4_1 {
-    height: 200px;
-    background-image: url('img/4_buppin.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed4_1 {}
 
-.bg_fixed4_2 {
-    height: 200px;
-    background-image: url('img/4_eisei.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed4_2 {}
 
-.bg_fixed4_3 {
-    height: 200px;
-    background-image: url('img/4_eneru.png');
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-}
+.bg_fixed4_3 {}
 
 .scroll {
     background-color: #0b905d;
@@ -274,7 +173,7 @@ section {
 /* headerはここ */
 
 header {
-    text-align: center;
+
     background-size: cover;
     padding: 60px 0px 0px 0px;
 }
@@ -384,10 +283,10 @@ header h2 {
     overflow: auto;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 9999;
     /*最前面に*/
-    width: 50%;
+    width: 60%;
     /*右側に隙間を作る（閉じるカバーを表示）*/
     max-width: 330px;
     /*最大幅（調整してください）*/
@@ -396,8 +295,8 @@ header h2 {
     /*背景色*/
     transition: .3s ease-in-out;
     /*滑らかに表示*/
-    -webkit-transform: translateX(-105%);
-    transform: translateX(-105%);
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
     /*左に隠しておく*/
 }
 
@@ -553,7 +452,7 @@ p {
 }
 
 .about img {
-    width: 70%;
+    width: 100%;
     text-align: center;
 }
 

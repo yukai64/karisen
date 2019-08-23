@@ -177,7 +177,7 @@ body {
 
 .bg_fixed3_1 {
     height: 600px;
-    background-image: url('img/3_gs.png');
+    background-image: url('img/3_gs.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -187,7 +187,7 @@ body {
 
 .bg_fixed3_2 {
     height: 600px;
-    background-image: url('img/3_zyou.png');
+    background-image: url('img/3_zyou.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
