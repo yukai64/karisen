@@ -173,9 +173,7 @@ section {
 /* headerはここ */
 
 header {
-
     background-size: cover;
-    padding: 60px 0px 0px 0px;
 }
 
 header h2 {
@@ -195,6 +193,12 @@ header h2 {
 
 .sptop img {
     width: 100%;
+    padding: 60px 0px 0px 0px;
+}
+
+.topmanu {
+    background-color: #ffffff;
+    position: fixed
 }
 
 
@@ -244,7 +248,7 @@ header h2 {
     height: 3px;
     width: 30px;
     border-radius: 50px;
-    background: #000000;
+    background: #0b905d;
     display: block;
     content: '';
     cursor: pointer;
@@ -429,6 +433,7 @@ p {
 }
 
 .top {
+    padding: 130px 50px 50px 50px;
     height: 30px;
     text-align: center;
     background-color: #0b905d;
