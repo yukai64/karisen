@@ -248,7 +248,7 @@ header h2 {
     height: 3px;
     width: 30px;
     border-radius: 50px;
-    background: #0b905d;
+    background: #000000;
     display: block;
     content: '';
     cursor: pointer;
